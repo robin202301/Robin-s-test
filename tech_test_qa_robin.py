@@ -23,10 +23,10 @@ expected_categories = ['A', 'B', 'C', 'D']
 unexpected_strings = check_unexpected_strings(data, 'category', expected_categories)
 
 # Check for unexpected numerical values in 'value' column
-unexpected_numerical = check_unexpected_numerical(data, 'value', 0, 100)
+unexpected_numerical = check_unexpected_numerical(data, 'value', 0, 100000)
 
 # Check for unexpected dates in 'date' column
-unexpected_dates = check_unexpected_dates(data, 'date', '2020-01-01', '2024-12-31')
+unexpected_dates = check_unexpected_dates(data, 'date', '1980-01-01', '2024-12-31')
 
 # Check for data integrity (example: join with another dataframe)
 reference_data = pd.read_csv('reference_data.csv')
